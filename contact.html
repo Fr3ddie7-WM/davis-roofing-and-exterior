@@ -703,44 +703,13 @@ footer a:hover{color:hsl(var(--sky))}
       <!-- RIGHT: calendar + form -->
       <div class="rv d1">
 
-        <!-- ── STEP 1: CALENDAR ─────────────────────────────── -->
+        <!-- CALENDAR BOOKING -->
         <div id="contactStepCal">
-          <p style="font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:0 0 12px">Step 1 — Pick a time</p>
           <style>#dre-cal-iframe{min-height:750px!important;width:100%!important;border:none!important;display:block!important}</style>
           <div style="border-radius:var(--radius);background:#fff;margin-bottom:20px;min-height:750px">
             <iframe src="https://api.leadconnectorhq.com/widget/booking/BxGqOq6cmW1FJpxMCeBN" allow="payment" id="BxGqOq6cmW1FJpxMCeBN_1788890921900" scrolling="no" title="Book a free estimate appointment" style="min-height:750px;width:100%;border:none;display:block"></iframe>
           </div>
           <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
-          <button id="contactCalDone" type="button" class="btn" style="width:100%;justify-content:center;margin-bottom:8px">
-            <span>Done booking — fill out your project details</span>
-          </button>
-          <p style="font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);text-align:center;margin:0 0 32px">Complete your appointment above first</p>
-        </div>
-
-        <!-- ── STEP 2: GHL FORM (hidden until calendar done) ── -->
-        <div id="contactStepForm" style="display:none">
-          <p style="font-family:var(--mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:0 0 12px">Step 2 — A few quick questions</p>
-          <div style="border-radius:var(--radius);overflow:hidden;margin-bottom:60px;height:930px">
-            <iframe
-              src="https://api.leadconnectorhq.com/widget/form/Ql46IGT4JdzdDlJ3z8JK"
-              style="width:100%;height:100%;border:none;border-radius:8px"
-              id="inline-Ql46IGT4JdzdDlJ3z8JK"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="Davis roofing and exterior Main Lead form"
-              data-height="930"
-              data-layout-iframe-id="inline-Ql46IGT4JdzdDlJ3z8JK"
-              data-form-id="Ql46IGT4JdzdDlJ3z8JK"
-              data-cookie-consent="true"
-              data-cookie-consent-provider="auto"
-              title="Davis roofing and exterior Main Lead form">
-            </iframe>
-          </div>
         </div>
 
       </div>
@@ -975,19 +944,5 @@ footer a:hover{color:hsl(var(--sky))}
 
 </script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a9eb76386066d429f81dae7" data-source="WEB_USER"></script>
-<script>
-(function () {
-  var btn = document.getElementById('contactCalDone');
-  if (!btn) return;
-  btn.addEventListener('click', function () {
-    document.getElementById('contactStepCal').style.display = 'none';
-    var formStep = document.getElementById('contactStepForm');
-    formStep.style.display = 'block';
-    var offset = 100;
-    var top = formStep.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top: top, behavior: 'smooth' });
-  });
-})();
-</script>
 </body>
 </html>
