@@ -343,16 +343,9 @@ body.menu-open .drawer{transform:translateY(0); visibility:visible}
 /* ---------- before / after ---------- */
 .ba{position:relative; aspect-ratio:4/3; overflow:hidden; border-radius:var(--radius); -webkit-user-select:none; user-select:none; touch-action:none; background:hsl(var(--onyx)); box-shadow:var(--shadow)}
 .dark .ba,.dark-alt .ba{box-shadow:none; border:1px solid rgba(255,255,255,.14)}
-.ba .layer{position:absolute; inset:0}
-.ba .layer img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1}
-.ba .after{clip-path:inset(0 0 0 50%)}
-.ba .ph{
-  position:absolute; inset:0; z-index:0; display:grid; place-content:center; gap:8px; text-align:center; padding:24px;
-  background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,transparent 2px 14px),linear-gradient(155deg,#0E1A2E,#243347);
-}
-.ba .after .ph{background-image:repeating-linear-gradient(135deg,hsl(var(--amber)/.1) 0 2px,transparent 2px 14px),linear-gradient(155deg,#2A4058,#16283C)}
-.ba .ph b{font-family:var(--display); font-size:1.5rem; color:#fff}
-.ba .ph span{font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; color:rgba(255,255,255,.5)}
+.ba-img{position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; display:block}
+.ba-clip{position:absolute; top:0; left:0; bottom:0; width:50%; overflow:hidden; z-index:1}
+.ba-clip img{position:absolute; top:0; left:0; height:100%; max-width:none; object-fit:cover}
 .ba .tag{position:absolute; bottom:16px; font-family:var(--mono); font-size:.66rem; letter-spacing:.18em; text-transform:uppercase; color:#fff; background:rgba(26,35,50,.75); backdrop-filter:blur(6px); padding:7px 13px; border-radius:2px; z-index:3}
 .ba .tag.l{left:16px}
 .ba .tag.r{right:16px}
@@ -361,7 +354,7 @@ body.menu-open .drawer{transform:translateY(0); visibility:visible}
   content:""; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
   width:52px; height:52px; border-radius:50%; background-color:hsl(var(--amber));
   box-shadow:0 8px 26px rgba(0,0,0,.45);
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none' stroke='%23070B12' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 10l-5 6 5 6M19 10l5 6-5 6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2020/svg' viewBox='0 0 32 32' fill='none' stroke='%23070B12' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 10l-5 6 5 6M19 10l5 6-5 6'/%3E%3C/svg%3E");
   background-repeat:no-repeat; background-position:center; background-size:26px 26px;
 }
 
@@ -700,15 +693,15 @@ footer a:hover{color:hsl(var(--sky))}
     </div>
 
     <div class="gal" id="gallery">
-      <div class="shot rv" data-cat="roofing"><span class="ph"><b>Roofing</b><span>Staunton, VA · Drone</span></span><img src="images/raze-solar-Scaj0T40nFI-unsplash.jpg" alt="Roofer installing shingles — Staunton, VA" onerror="this.remove()"><span class="cap">Full replacement · Staunton</span></div>
-      <div class="shot rv d1" data-cat="siding"><span class="ph"><b>Siding</b><span>Waynesboro, VA</span></span><img src="images/john-powell-cRCGMkVMV7U-unsplash.jpg" alt="Vinyl siding with shutters and window — Waynesboro, VA" onerror="this.remove()"><span class="cap">Vinyl siding · Waynesboro</span></div>
-      <div class="shot rv d2" data-cat="roofing"><span class="ph"><b>Roofing</b><span>Midlothian, VA · Drone</span></span><img src="images/paragon-exterior--uvuU43FAwQ-unsplash.jpg" alt="Aerial drone view of new shingle roof — Midlothian, VA" onerror="this.remove()"><span class="cap">Aerial · Midlothian</span></div>
-      <div class="shot rv" data-cat="gutters"><span class="ph"><b>Gutters</b><span>Fishersville, VA</span></span><img src="images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg" alt="Seamless gutter and downspout installation — Fishersville, VA" onerror="this.remove()"><span class="cap">Seamless gutters · Fishersville</span></div>
-      <div class="shot rv d1" data-cat="windows"><span class="ph"><b>Windows</b><span>Richmond, VA</span></span><img src="images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg" alt="Window replacement on brick building — Richmond, VA" onerror="this.remove()"><span class="cap">Replacement windows · Richmond</span></div>
-      <div class="shot rv d2" data-cat="roofing"><span class="ph"><b>Roofing</b><span>Verona, VA</span></span><img src="images/zohair-mirza-4XMHsy4Rvi8-unsplash.jpg" alt="Roofer carrying shingle bundles — Verona, VA" onerror="this.remove()"><span class="cap">Storm damage · Verona</span></div>
-      <div class="shot rv" data-cat="siding"><span class="ph"><b>Siding</b><span>Chesterfield, VA</span></span><img src="images/marina-de-salis-OBPQSov0yfA-unsplash.jpg" alt="Gray siding and window exterior — Chesterfield, VA" onerror="this.remove()"><span class="cap">Fiber cement · Chesterfield</span></div>
-      <div class="shot rv d1" data-cat="roofing"><span class="ph"><b>Roofing</b><span>Churchville, VA</span></span><img src="images/raze-solar-RGkNFjRPyO0-unsplash.jpg" alt="Two roofers working on a residential roof — Churchville, VA" onerror="this.remove()"><span class="cap">Standing seam metal · Churchville</span></div>
-      <div class="shot rv d2" data-cat="gutters"><span class="ph"><b>Gutters</b><span>Glen Allen, VA</span></span><img src="images/pexels-nathan-franklin-102496729-15662219.jpg" alt="Roof edge and gutter corner detail — Glen Allen, VA" onerror="this.remove()"><span class="cap">Gutter guards · Glen Allen</span></div>
+      <a class="shot rv" data-cat="roofing" href="service-roofing.html"><span class="ph"><b>Roofing</b><span>Staunton, VA · Drone</span></span><img src="images/raze-solar-Scaj0T40nFI-unsplash.jpg" alt="Roofer installing shingles — Staunton, VA" onerror="this.remove()"><span class="cap">Full replacement · Staunton</span></a>
+      <a class="shot rv d1" data-cat="siding" href="service-siding.html"><span class="ph"><b>Siding</b><span>Waynesboro, VA</span></span><img src="images/john-powell-cRCGMkVMV7U-unsplash.jpg" alt="Vinyl siding with shutters and window — Waynesboro, VA" onerror="this.remove()"><span class="cap">Vinyl siding · Waynesboro</span></a>
+      <a class="shot rv d2" data-cat="roofing" href="service-roofing.html"><span class="ph"><b>Roofing</b><span>Midlothian, VA · Drone</span></span><img src="images/paragon-exterior--uvuU43FAwQ-unsplash.jpg" alt="Aerial drone view of new shingle roof — Midlothian, VA" onerror="this.remove()"><span class="cap">Aerial · Midlothian</span></a>
+      <a class="shot rv" data-cat="gutters" href="service-gutters.html"><span class="ph"><b>Gutters</b><span>Fishersville, VA</span></span><img src="images/gutters-install.jpg" alt="Seamless gutter installation — Fishersville, VA" onerror="this.remove()"><span class="cap">Seamless gutters · Fishersville</span></a>
+      <a class="shot rv d1" data-cat="windows" href="service-windows-and-doors.html"><span class="ph"><b>Windows</b><span>Richmond, VA</span></span><img src="images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg" alt="Window replacement on brick building — Richmond, VA" onerror="this.remove()"><span class="cap">Replacement windows · Richmond</span></a>
+      <a class="shot rv d2" data-cat="roofing" href="service-roofing.html"><span class="ph"><b>Roofing</b><span>Verona, VA</span></span><img src="images/zohair-mirza-4XMHsy4Rvi8-unsplash.jpg" alt="Roofer carrying shingle bundles — Verona, VA" onerror="this.remove()"><span class="cap">Storm damage · Verona</span></a>
+      <a class="shot rv" data-cat="siding" href="service-siding.html"><span class="ph"><b>Siding</b><span>Chesterfield, VA</span></span><img src="images/siding-fiber-cement.jpg" alt="Modern fiber cement siding on home exterior — Chesterfield, VA" onerror="this.remove()"><span class="cap">Fiber cement · Chesterfield</span></a>
+      <a class="shot rv d1" data-cat="roofing" href="service-roofing.html"><span class="ph"><b>Roofing</b><span>Churchville, VA</span></span><img src="images/metal-roof-standing-seam.jpg" alt="Standing seam metal roof — Churchville, VA" onerror="this.remove()"><span class="cap">Standing seam metal · Churchville</span></a>
+      <a class="shot rv d2" data-cat="gutters" href="service-gutters.html"><span class="ph"><b>Gutters</b><span>Glen Allen, VA</span></span><img src="images/gutters-clean2.jpg" alt="Clean seamless gutter installation — Glen Allen, VA" onerror="this.remove()"><span class="cap">Gutter guards · Glen Allen</span></a>
     </div>
   </div>
 </section>
@@ -723,10 +716,12 @@ footer a:hover{color:hsl(var(--sky))}
         <div class="btn-row" style="margin-top:30px"><a class="btn" href="contact.html"><span>Get My Free Estimate</span></a></div>
       </div>
       <div class="ba rv d1" role="group" aria-label="Before and after roof comparison">
-        <div class="layer before"><span class="ph"><b>Before</b><span>images/before-01.jpg</span></span><img src="images/before-01.jpg" alt="" onerror="this.remove()"></div>
-        <div class="layer after"><span class="ph"><b>After</b><span>images/after-01.jpg</span></span><img src="images/after-01.jpg" alt="" onerror="this.remove()"></div>
+        <img class="ba-img" src="images/after-client.png" alt="After: new roof installed">
+        <div class="ba-clip">
+          <img src="images/before-client.png" alt="Before: original roof">
+        </div>
         <span class="tag l">Before</span><span class="tag r">After</span>
-        <div class="ba-handle" tabindex="0" role="slider" aria-label="Reveal the after photo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+        <div class="ba-handle" tabindex="0" role="slider" aria-label="Compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
       </div>
     </div>
   </div>
@@ -840,13 +835,15 @@ footer a:hover{color:hsl(var(--sky))}
 
   /* before / after slider — mouse, touch and keyboard */
   document.querySelectorAll('.ba').forEach(function (ba) {
-    var after = ba.querySelector('.after');
+    var clip = ba.querySelector('.ba-clip');
+    var clipImg = clip ? clip.querySelector('img') : null;
     var handle = ba.querySelector('.ba-handle');
-    if (!after || !handle) return;
+    if (!clip || !handle) return;
     var pos = 50, dragging = false;
 
     function apply() {
-      after.style.clipPath = 'inset(0 0 0 ' + pos + '%)';
+      clip.style.width = pos + '%';
+      if (clipImg) clipImg.style.width = ba.offsetWidth + 'px';
       handle.style.left = pos + '%';
       handle.setAttribute('aria-valuenow', Math.round(pos));
     }
@@ -890,7 +887,9 @@ footer a:hover{color:hsl(var(--sky))}
         b.classList.add('on');
         b.setAttribute('aria-pressed', 'true');
         shots.forEach(function (s) {
-          s.hidden = !(f === 'all' || s.getAttribute('data-cat') === f);
+          var show = (f === 'all' || s.getAttribute('data-cat') === f);
+          s.hidden = !show;
+          if (show) s.classList.add('in');
         });
       });
     });
