@@ -943,6 +943,47 @@ footer a:hover{color:hsl(var(--sky))}
 })();
 
 </script>
+<script>
+/* phone/sms click tracking */
+(function () {
+  document.querySelectorAll('a[href^="tel:"], a[href^="sms:"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'phone_click', { link_url: this.href });
+      }
+    });
+  });
+})();
+</script>
+<script>
+/* GHL embed postMessage — redirect on booking/form completion */
+window.addEventListener('message', function (e) {
+  if (!e.data) return;
+  try {
+    var d = (typeof e.data === 'string') ? JSON.parse(e.data) : e.data;
+    /* Calendar booking confirmed */
+    if (
+      d.type === 'booking_confirmed' ||
+      d.type === 'appointmentBooked' ||
+      d.event === 'booking_confirmed' ||
+      d.event === 'appointmentBooked' ||
+      d.action === 'booking_confirmed'
+    ) {
+      window.location.href = '/thank-you-booking';
+      return;
+    }
+    /* Form submission (backup, if a form embed is added later) */
+    if (
+      d.type === 'form_submitted' ||
+      d.type === 'FORM_SUBMITTED' ||
+      d.event === 'form_submitted' ||
+      d.event === 'formSubmitted'
+    ) {
+      window.location.href = '/thank-you';
+    }
+  } catch (err) {}
+});
+</script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a9eb76386066d429f81dae7" data-source="WEB_USER"></script>
 </body>
 </html>

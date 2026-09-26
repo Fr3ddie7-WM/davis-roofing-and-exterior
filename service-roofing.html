@@ -831,6 +831,18 @@ footer a:hover{color:hsl(var(--sky))}
 })();
 
 </script>
+<script>
+/* phone/sms click tracking */
+(function () {
+  document.querySelectorAll('a[href^="tel:"], a[href^="sms:"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'phone_click', { link_url: this.href });
+      }
+    });
+  });
+})();
+</script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a9eb76386066d429f81dae7" data-source="WEB_USER"></script>
 </body>
 </html>

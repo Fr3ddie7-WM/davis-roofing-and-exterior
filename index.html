@@ -399,16 +399,9 @@ body.menu-open .drawer{transform:translateY(0); visibility:visible}
 /* ---------- before / after ---------- */
 .ba{position:relative; aspect-ratio:4/3; overflow:hidden; border-radius:var(--radius); -webkit-user-select:none; user-select:none; touch-action:none; background:hsl(var(--onyx)); box-shadow:var(--shadow)}
 .dark .ba,.dark-alt .ba{box-shadow:none; border:1px solid rgba(255,255,255,.14)}
-.ba .layer{position:absolute; inset:0}
-.ba .layer img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1}
-.ba .after{clip-path:inset(0 0 0 50%)}
-.ba .ph{
-  position:absolute; inset:0; z-index:0; display:grid; place-content:center; gap:8px; text-align:center; padding:24px;
-  background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,transparent 2px 14px),linear-gradient(155deg,#0E1A2E,#243347);
-}
-.ba .after .ph{background-image:repeating-linear-gradient(135deg,hsl(var(--amber)/.1) 0 2px,transparent 2px 14px),linear-gradient(155deg,#2A4058,#16283C)}
-.ba .ph b{font-family:var(--display); font-size:1.5rem; color:#fff}
-.ba .ph span{font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; color:rgba(255,255,255,.5)}
+.ba-img{position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; display:block}
+.ba-clip{position:absolute; top:0; left:0; bottom:0; width:50%; overflow:hidden; z-index:1}
+.ba-clip img{position:absolute; top:0; left:0; height:100%; max-width:none; object-fit:cover}
 .ba .tag{position:absolute; bottom:16px; font-family:var(--mono); font-size:.66rem; letter-spacing:.18em; text-transform:uppercase; color:#fff; background:rgba(26,35,50,.75); backdrop-filter:blur(6px); padding:7px 13px; border-radius:2px; z-index:3}
 .ba .tag.l{left:16px}
 .ba .tag.r{right:16px}
@@ -909,17 +902,13 @@ footer a:hover{color:hsl(var(--sky))}
       </div>
 
       <div class="ba rv d1" role="group" aria-label="Before and after roof replacement comparison">
-        <div class="layer before">
-          <span class="ph"><b>Before</b><span>images/before-01.jpg</span></span>
-          <img src="images/before-01.jpg" alt="" onerror="this.remove()">
-        </div>
-        <div class="layer after">
-          <span class="ph"><b>After</b><span>images/after-01.jpg</span></span>
-          <img src="images/after-01.jpg" alt="" onerror="this.remove()">
+        <img class="ba-img" src="images/after-01.jpg" alt="After: new roof installed">
+        <div class="ba-clip">
+          <img src="images/before-01.jpg" alt="Before: original roof">
         </div>
         <span class="tag l">Before</span>
         <span class="tag r">After</span>
-        <div class="ba-handle" tabindex="0" role="slider" aria-label="Reveal the after photo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+        <div class="ba-handle" tabindex="0" role="slider" aria-label="Compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
       </div>
     </div>
   </div>
@@ -1174,13 +1163,15 @@ footer a:hover{color:hsl(var(--sky))}
 
   /* before / after slider — mouse, touch and keyboard */
   document.querySelectorAll('.ba').forEach(function (ba) {
-    var after = ba.querySelector('.after');
+    var clip = ba.querySelector('.ba-clip');
+    var clipImg = clip ? clip.querySelector('img') : null;
     var handle = ba.querySelector('.ba-handle');
-    if (!after || !handle) return;
+    if (!clip || !handle) return;
     var pos = 50, dragging = false;
 
     function apply() {
-      after.style.clipPath = 'inset(0 0 0 ' + pos + '%)';
+      clip.style.width = pos + '%';
+      if (clipImg) clipImg.style.width = ba.offsetWidth + 'px';
       handle.style.left = pos + '%';
       handle.setAttribute('aria-valuenow', Math.round(pos));
     }
@@ -1290,6 +1281,18 @@ footer a:hover{color:hsl(var(--sky))}
   });
 })();
 
+</script>
+<script>
+/* phone/sms click tracking */
+(function () {
+  document.querySelectorAll('a[href^="tel:"], a[href^="sms:"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'phone_click', { link_url: this.href });
+      }
+    });
+  });
+})();
 </script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a9eb76386066d429f81dae7" data-source="WEB_USER"></script>
 </body>
