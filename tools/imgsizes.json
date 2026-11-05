@@ -1,0 +1,827 @@
+{
+ "index.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/hero-poster.jpg",
+    "w": 1540,
+    "h": 885,
+    "top": 10
+   },
+   {
+    "i": 1,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 293,
+    "h": 183,
+    "top": 1353
+   },
+   {
+    "i": 2,
+    "src": "images/vivek-vidyarthi-qIDXlcb2tIY-unsplash.jpg",
+    "w": 293,
+    "h": 183,
+    "top": 1353
+   },
+   {
+    "i": 3,
+    "src": "images/johnson-U6Q6zVDgmSs-unsplash.jpg",
+    "w": 293,
+    "h": 183,
+    "top": 1353
+   },
+   {
+    "i": 4,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 293,
+    "h": 183,
+    "top": 1353
+   },
+   {
+    "i": 5,
+    "src": "images/after-01.jpg",
+    "w": 527,
+    "h": 396,
+    "top": 2959
+   },
+   {
+    "i": 6,
+    "src": "images/before-01.jpg",
+    "w": 527,
+    "h": 396,
+    "top": 2959
+   },
+   {
+    "i": 7,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 823,
+    "h": 617,
+    "top": 5424
+   },
+   {
+    "i": 8,
+    "src": "images/marina-de-salis-OBPQSov0yfA-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 5424
+   },
+   {
+    "i": 9,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 6053
+   },
+   {
+    "i": 10,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 6053
+   },
+   {
+    "i": 11,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 6053
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/hero-poster.jpg",
+    "w": 876,
+    "h": 919,
+    "top": 9
+   },
+   {
+    "i": 1,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 378,
+    "h": 236,
+    "top": 1267
+   },
+   {
+    "i": 2,
+    "src": "images/vivek-vidyarthi-qIDXlcb2tIY-unsplash.jpg",
+    "w": 378,
+    "h": 236,
+    "top": 1267
+   },
+   {
+    "i": 3,
+    "src": "images/johnson-U6Q6zVDgmSs-unsplash.jpg",
+    "w": 378,
+    "h": 236,
+    "top": 1794
+   },
+   {
+    "i": 4,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 378,
+    "h": 236,
+    "top": 1794
+   },
+   {
+    "i": 5,
+    "src": "images/after-01.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 3874
+   },
+   {
+    "i": 6,
+    "src": "images/before-01.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 3874
+   },
+   {
+    "i": 7,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 6448
+   },
+   {
+    "i": 8,
+    "src": "images/marina-de-salis-OBPQSov0yfA-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 6448
+   },
+   {
+    "i": 9,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 6748
+   },
+   {
+    "i": 10,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 6748
+   },
+   {
+    "i": 11,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 7048
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/hero-poster.jpg",
+    "w": 417,
+    "h": 952,
+    "top": 8
+   },
+   {
+    "i": 1,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 348,
+    "h": 218,
+    "top": 1357
+   },
+   {
+    "i": 2,
+    "src": "images/vivek-vidyarthi-qIDXlcb2tIY-unsplash.jpg",
+    "w": 348,
+    "h": 218,
+    "top": 1866
+   },
+   {
+    "i": 3,
+    "src": "images/johnson-U6Q6zVDgmSs-unsplash.jpg",
+    "w": 348,
+    "h": 218,
+    "top": 2374
+   },
+   {
+    "i": 4,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 348,
+    "h": 218,
+    "top": 2883
+   },
+   {
+    "i": 5,
+    "src": "images/after-01.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 5317
+   },
+   {
+    "i": 6,
+    "src": "images/before-01.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 5317
+   },
+   {
+    "i": 7,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 8654
+   },
+   {
+    "i": 8,
+    "src": "images/marina-de-salis-OBPQSov0yfA-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 8654
+   },
+   {
+    "i": 9,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 8793
+   },
+   {
+    "i": 10,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 8793
+   },
+   {
+    "i": 11,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 8932
+   }
+  ]
+ },
+ "services.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 586,
+    "h": 440,
+    "top": 953
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 584,
+    "h": 438,
+    "top": 1707
+   },
+   {
+    "i": 2,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 586,
+    "h": 879,
+    "top": 2239
+   },
+   {
+    "i": 3,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 586,
+    "h": 781,
+    "top": 3025
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 1187
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 778,
+    "h": 584,
+    "top": 2397
+   },
+   {
+    "i": 2,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 780,
+    "h": 1170,
+    "top": 3312
+   },
+   {
+    "i": 3,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 780,
+    "h": 1040,
+    "top": 4558
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 1533
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 348,
+    "h": 261,
+    "top": 2588
+   },
+   {
+    "i": 2,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 350,
+    "h": 525,
+    "top": 3511
+   },
+   {
+    "i": 3,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 350,
+    "h": 467,
+    "top": 4566
+   }
+  ]
+ },
+ "service-roofing.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 586,
+    "h": 440,
+    "top": 1051
+   },
+   {
+    "i": 1,
+    "src": "images/chandler-cruttenden-dDluNWaVQWA-unsplash.jpg",
+    "w": 584,
+    "h": 438,
+    "top": 3472
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 1329
+   },
+   {
+    "i": 1,
+    "src": "images/chandler-cruttenden-dDluNWaVQWA-unsplash.jpg",
+    "w": 778,
+    "h": 584,
+    "top": 4197
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 1531
+   },
+   {
+    "i": 1,
+    "src": "images/chandler-cruttenden-dDluNWaVQWA-unsplash.jpg",
+    "w": 348,
+    "h": 261,
+    "top": 5149
+   }
+  ]
+ },
+ "service-siding.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/vivek-vidyarthi-qIDXlcb2tIY-unsplash.jpg",
+    "w": 586,
+    "h": 440,
+    "top": 935
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 584,
+    "h": 438,
+    "top": 3195
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/vivek-vidyarthi-qIDXlcb2tIY-unsplash.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 1218
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 778,
+    "h": 584,
+    "top": 3983
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/vivek-vidyarthi-qIDXlcb2tIY-unsplash.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 1431
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 348,
+    "h": 261,
+    "top": 4954
+   }
+  ]
+ },
+ "service-windows-and-doors.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/johnson-U6Q6zVDgmSs-unsplash.jpg",
+    "w": 586,
+    "h": 440,
+    "top": 1035
+   },
+   {
+    "i": 1,
+    "src": "images/marina-de-salis-OBPQSov0yfA-unsplash.jpg",
+    "w": 586,
+    "h": 440,
+    "top": 2726
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/johnson-U6Q6zVDgmSs-unsplash.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 1301
+   },
+   {
+    "i": 1,
+    "src": "images/marina-de-salis-OBPQSov0yfA-unsplash.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 3459
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/johnson-U6Q6zVDgmSs-unsplash.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 1592
+   },
+   {
+    "i": 1,
+    "src": "images/marina-de-salis-OBPQSov0yfA-unsplash.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 4099
+   }
+  ]
+ },
+ "service-gutters.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 586,
+    "h": 440,
+    "top": 1051
+   },
+   {
+    "i": 1,
+    "src": "images/pexels-nathan-franklin-102496729-15662219.jpg",
+    "w": 586,
+    "h": 440,
+    "top": 2783
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 1329
+   },
+   {
+    "i": 1,
+    "src": "images/pexels-nathan-franklin-102496729-15662219.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 3557
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 1608
+   },
+   {
+    "i": 1,
+    "src": "images/pexels-nathan-franklin-102496729-15662219.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 4234
+   }
+  ]
+ },
+ "work.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 863
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 863
+   },
+   {
+    "i": 2,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 863
+   },
+   {
+    "i": 3,
+    "src": "images/gutters-install.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 1179
+   },
+   {
+    "i": 4,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 1179
+   },
+   {
+    "i": 5,
+    "src": "images/zohair-mirza-4XMHsy4Rvi8-unsplash.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 1179
+   },
+   {
+    "i": 6,
+    "src": "images/siding-fiber-cement.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 1495
+   },
+   {
+    "i": 7,
+    "src": "images/metal-roof-standing-seam.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 1495
+   },
+   {
+    "i": 8,
+    "src": "images/gutters-clean2.jpg",
+    "w": 405,
+    "h": 304,
+    "top": 1495
+   },
+   {
+    "i": 9,
+    "src": "images/after-client.png",
+    "w": 525,
+    "h": 394,
+    "top": 2056
+   },
+   {
+    "i": 10,
+    "src": "images/before-client.png",
+    "w": 527,
+    "h": 394,
+    "top": 2056
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 649
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 649
+   },
+   {
+    "i": 2,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 949
+   },
+   {
+    "i": 3,
+    "src": "images/gutters-install.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 949
+   },
+   {
+    "i": 4,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 1273
+   },
+   {
+    "i": 5,
+    "src": "images/zohair-mirza-4XMHsy4Rvi8-unsplash.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 1273
+   },
+   {
+    "i": 6,
+    "src": "images/siding-fiber-cement.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 1573
+   },
+   {
+    "i": 7,
+    "src": "images/metal-roof-standing-seam.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 1573
+   },
+   {
+    "i": 8,
+    "src": "images/gutters-clean2.jpg",
+    "w": 384,
+    "h": 288,
+    "top": 1873
+   },
+   {
+    "i": 9,
+    "src": "images/after-client.png",
+    "w": 778,
+    "h": 583,
+    "top": 2627
+   },
+   {
+    "i": 10,
+    "src": "images/before-client.png",
+    "w": 780,
+    "h": 583,
+    "top": 2627
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/raze-solar-Scaj0T40nFI-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 776
+   },
+   {
+    "i": 1,
+    "src": "images/john-powell-cRCGMkVMV7U-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 776
+   },
+   {
+    "i": 2,
+    "src": "images/paragon-exterior--uvuU43FAwQ-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 939
+   },
+   {
+    "i": 3,
+    "src": "images/gutters-install.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 939
+   },
+   {
+    "i": 4,
+    "src": "images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 1078
+   },
+   {
+    "i": 5,
+    "src": "images/zohair-mirza-4XMHsy4Rvi8-unsplash.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 1078
+   },
+   {
+    "i": 6,
+    "src": "images/siding-fiber-cement.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 1217
+   },
+   {
+    "i": 7,
+    "src": "images/metal-roof-standing-seam.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 1217
+   },
+   {
+    "i": 8,
+    "src": "images/gutters-clean2.jpg",
+    "w": 169,
+    "h": 127,
+    "top": 1355
+   },
+   {
+    "i": 9,
+    "src": "images/after-client.png",
+    "w": 348,
+    "h": 261,
+    "top": 1939
+   },
+   {
+    "i": 10,
+    "src": "images/before-client.png",
+    "w": 350,
+    "h": 261,
+    "top": 1939
+   }
+  ]
+ },
+ "about.html": {
+  "d": [
+   {
+    "i": 0,
+    "src": "images/jordan-davis.jpg",
+    "w": 527,
+    "h": 396,
+    "top": 901
+   }
+  ],
+  "t": [
+   {
+    "i": 0,
+    "src": "images/jordan-davis.jpg",
+    "w": 780,
+    "h": 585,
+    "top": 1137
+   }
+  ],
+  "m": [
+   {
+    "i": 0,
+    "src": "images/jordan-davis.jpg",
+    "w": 350,
+    "h": 263,
+    "top": 1429
+   }
+  ]
+ },
+ "contact.html": {
+  "d": [],
+  "t": [],
+  "m": []
+ }
+}

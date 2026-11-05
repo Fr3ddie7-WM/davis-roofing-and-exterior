@@ -418,6 +418,10 @@ footer a:hover{color:hsl(var(--sky))}
 .m-call{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:48px;padding:0 18px;border-radius:9999px;background:hsl(var(--sky));color:#fff;font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .m-call:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media(min-width:700px){.m-call{display:none}}
+
+/* keep aspect ratio when only width is set by CSS (Nov 2026) */
+:where(img[width][height]){height:auto}
+picture{display:contents}
 </style>
 <script type="application/ld+json">
 {
@@ -768,7 +772,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="media rv d1">
-        <img src="images/paragon-exterior--uvuU43FAwQ-unsplash.jpg" alt="Aerial drone view of completed asphalt shingle roof" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/paragon-exterior--uvuu43fawq-unsplash-480.webp 480w, images/opt/paragon-exterior--uvuu43fawq-unsplash-800.webp 800w, images/opt/paragon-exterior--uvuu43fawq-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/paragon-exterior--uvuu43fawq-unsplash-1200.jpg" srcset="images/opt/paragon-exterior--uvuu43fawq-unsplash-480.jpg 480w, images/opt/paragon-exterior--uvuu43fawq-unsplash-800.jpg 800w, images/opt/paragon-exterior--uvuu43fawq-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="900" decoding="async" loading="lazy" alt="Aerial drone view of completed asphalt shingle roof"></picture>
         <div class="stat-card"><b>1 Day</b><span>Typical install</span></div>
       </div>
     </div>
@@ -843,7 +847,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="media rv d1">
-        <img src="images/chandler-cruttenden-dDluNWaVQWA-unsplash.jpg" alt="Roofing installation detail showing shingle work" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/chandler-cruttenden-ddlunwavqwa-unsplash-480.webp 480w, images/opt/chandler-cruttenden-ddlunwavqwa-unsplash-800.webp 800w, images/opt/chandler-cruttenden-ddlunwavqwa-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 95vw, 584px"><img src="images/opt/chandler-cruttenden-ddlunwavqwa-unsplash-1200.jpg" srcset="images/opt/chandler-cruttenden-ddlunwavqwa-unsplash-480.jpg 480w, images/opt/chandler-cruttenden-ddlunwavqwa-unsplash-800.jpg 800w, images/opt/chandler-cruttenden-ddlunwavqwa-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 95vw, 584px" width="1200" height="1800" decoding="async" loading="lazy" alt="Roofing installation detail showing shingle work"></picture>
       </div>
     </div>
   </div>

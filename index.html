@@ -679,6 +679,10 @@ footer a:hover{color:hsl(var(--sky))}
 .m-call{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:48px;padding:0 18px;border-radius:9999px;background:hsl(var(--sky));color:#fff;font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .m-call:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media(min-width:700px){.m-call{display:none}}
+
+/* keep aspect ratio when only width is set by CSS (Nov 2026) */
+:where(img[width][height]){height:auto}
+picture{display:contents}
 </style>
 <script type="application/ld+json">
 {
@@ -882,7 +886,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main id="main">
 <section class="hero on-dark">
   <div class="hero-media">
-    <img src="images/hero-poster.jpg" alt="" width="900" height="600" fetchpriority="high" decoding="async">
+    <picture><source type="image/webp" srcset="images/opt/hero-poster-480.webp 480w, images/opt/hero-poster-800.webp 800w, images/opt/hero-poster-900.webp 900w" sizes="(max-width: 699px) 107vw, (max-width: 1099px) 107vw, 1540px"><img src="images/opt/hero-poster-900.jpg" srcset="images/opt/hero-poster-480.jpg 480w, images/opt/hero-poster-800.jpg 800w, images/opt/hero-poster-900.jpg 900w" sizes="(max-width: 699px) 107vw, (max-width: 1099px) 107vw, 1540px" width="900" height="600" decoding="async" fetchpriority="high" alt=""></picture>
   </div>
 
   <div class="hero-inner">
@@ -931,7 +935,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="svc rv" href="service-roofing.html">
         <div class="svc-img">
           <span class="num">01</span>
-          <img src="images/raze-solar-Scaj0T40nFI-unsplash.jpg" alt="Roofer installing architectural shingles" loading="lazy">
+          <picture><source type="image/webp" srcset="images/opt/raze-solar-scaj0t40nfi-unsplash-480.webp 480w, images/opt/raze-solar-scaj0t40nfi-unsplash-800.webp 800w, images/opt/raze-solar-scaj0t40nfi-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px"><img src="images/opt/raze-solar-scaj0t40nfi-unsplash-1200.jpg" srcset="images/opt/raze-solar-scaj0t40nfi-unsplash-480.jpg 480w, images/opt/raze-solar-scaj0t40nfi-unsplash-800.jpg 800w, images/opt/raze-solar-scaj0t40nfi-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px" width="1200" height="800" decoding="async" loading="lazy" alt="Roofer installing architectural shingles"></picture>
         </div>
         <div class="svc-body">
           <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 24 24 8l20 16"/><path d="M9 22v18h30V22"/><path d="M9 30h30M9 36h30"/></svg>
@@ -944,7 +948,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="svc rv d1" href="service-siding.html">
         <div class="svc-img">
           <span class="num">02</span>
-          <img src="images/vivek-vidyarthi-qIDXlcb2tIY-unsplash.jpg" alt="Clean white vinyl siding on a Virginia home" loading="lazy">
+          <picture><source type="image/webp" srcset="images/opt/vivek-vidyarthi-qidxlcb2tiy-unsplash-480.webp 480w, images/opt/vivek-vidyarthi-qidxlcb2tiy-unsplash-800.webp 800w, images/opt/vivek-vidyarthi-qidxlcb2tiy-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px"><img src="images/opt/vivek-vidyarthi-qidxlcb2tiy-unsplash-1200.jpg" srcset="images/opt/vivek-vidyarthi-qidxlcb2tiy-unsplash-480.jpg 480w, images/opt/vivek-vidyarthi-qidxlcb2tiy-unsplash-800.jpg 800w, images/opt/vivek-vidyarthi-qidxlcb2tiy-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px" width="1200" height="1810" decoding="async" loading="lazy" alt="Clean white vinyl siding on a Virginia home"></picture>
         </div>
         <div class="svc-body">
           <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="9" width="34" height="30"/><path d="M7 17h34M7 25h34M7 33h34"/><path d="M18 9v30"/></svg>
@@ -957,7 +961,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="svc rv d2" href="service-windows-and-doors.html">
         <div class="svc-img">
           <span class="num">03</span>
-          <img src="images/johnson-U6Q6zVDgmSs-unsplash.jpg" alt="Beautiful home with large replacement windows" loading="lazy">
+          <picture><source type="image/webp" srcset="images/opt/johnson-u6q6zvdgmss-unsplash-480.webp 480w, images/opt/johnson-u6q6zvdgmss-unsplash-800.webp 800w, images/opt/johnson-u6q6zvdgmss-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px"><img src="images/opt/johnson-u6q6zvdgmss-unsplash-1200.jpg" srcset="images/opt/johnson-u6q6zvdgmss-unsplash-480.jpg 480w, images/opt/johnson-u6q6zvdgmss-unsplash-800.jpg 800w, images/opt/johnson-u6q6zvdgmss-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px" width="1200" height="900" decoding="async" loading="lazy" alt="Beautiful home with large replacement windows"></picture>
         </div>
         <div class="svc-body">
           <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="7" width="32" height="34"/><path d="M24 7v34M8 24h32"/><path d="M14 13h4M14 30h4"/></svg>
@@ -970,7 +974,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="svc rv d3" href="service-gutters.html">
         <div class="svc-img">
           <span class="num">04</span>
-          <img src="images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg" alt="Seamless aluminum gutter and downspout" loading="lazy">
+          <picture><source type="image/webp" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.webp 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.webp 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px"><img src="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.jpg 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.jpg 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 46vw, 293px" width="1200" height="1600" decoding="async" loading="lazy" alt="Seamless aluminum gutter and downspout"></picture>
         </div>
         <div class="svc-body">
           <svg class="svc-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 14h38v8H5z"/><path d="M12 22v20M36 22v20"/><path d="M12 42h8M28 34h8"/></svg>
@@ -1050,9 +1054,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="ba rv d1" role="group" aria-label="Before and after roof replacement comparison">
-        <img class="ba-img" src="images/after-01.jpg" alt="After: new roof installed">
+        <picture><source type="image/webp" srcset="images/opt/after-01-480.webp 480w, images/opt/after-01-800.webp 800w, images/opt/after-01-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 527px"><img src="images/opt/after-01-1200.jpg" srcset="images/opt/after-01-480.jpg 480w, images/opt/after-01-800.jpg 800w, images/opt/after-01-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 527px" width="1200" height="900" decoding="async" loading="lazy" class="ba-img" alt="After: new roof installed"></picture>
         <div class="ba-clip">
-          <img src="images/before-01.jpg" alt="Before: original roof">
+          <picture><source type="image/webp" srcset="images/opt/before-01-480.webp 480w, images/opt/before-01-800.webp 800w, images/opt/before-01-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 527px"><img src="images/opt/before-01-1200.jpg" srcset="images/opt/before-01-480.jpg 480w, images/opt/before-01-800.jpg 800w, images/opt/before-01-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 527px" width="1200" height="900" decoding="async" loading="lazy" alt="Before: original roof"></picture>
         </div>
         <span class="tag l">Before</span>
         <span class="tag r">After</span>
@@ -1110,11 +1114,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="gal">
-      <a class="shot wide rv" href="work.html"><span class="ph"><b>Roofing</b><span>Illustrative photo</span></span><img src="images/raze-solar-Scaj0T40nFI-unsplash.jpg" alt="Roofer installing architectural shingles on a Virginia home" onerror="this.remove()"><span class="cap">Roof replacement</span></a>
-      <a class="shot rv d1" href="work.html"><span class="ph"><b>Siding</b><span>Illustrative photo</span></span><img src="images/marina-de-salis-OBPQSov0yfA-unsplash.jpg" alt="Gray vinyl siding and replacement window on a Virginia home" onerror="this.remove()"><span class="cap">Vinyl siding</span></a>
-      <a class="shot rv d2" href="work.html"><span class="ph"><b>Roofing</b><span>Illustrative photo</span></span><img src="images/paragon-exterior--uvuU43FAwQ-unsplash.jpg" alt="Aerial drone view of completed asphalt shingle roof" onerror="this.remove()"><span class="cap">Aerial</span></a>
-      <a class="shot rv d3" href="work.html"><span class="ph"><b>Gutters</b><span>Illustrative photo</span></span><img src="images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg" alt="Seamless aluminum gutter and downspout on a home" onerror="this.remove()"><span class="cap">Seamless gutters</span></a>
-      <a class="shot rv d4" href="work.html"><span class="ph"><b>Windows</b><span>Illustrative photo</span></span><img src="images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg" alt="Large windows on a brick commercial building" onerror="this.remove()"><span class="cap">Replacement windows</span></a>
+      <a class="shot wide rv" href="work.html"><span class="ph"><b>Roofing</b><span>Illustrative photo</span></span><picture><source type="image/webp" srcset="images/opt/raze-solar-scaj0t40nfi-unsplash-480.webp 480w, images/opt/raze-solar-scaj0t40nfi-unsplash-800.webp 800w, images/opt/raze-solar-scaj0t40nfi-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 823px"><img src="images/opt/raze-solar-scaj0t40nfi-unsplash-1200.jpg" srcset="images/opt/raze-solar-scaj0t40nfi-unsplash-480.jpg 480w, images/opt/raze-solar-scaj0t40nfi-unsplash-800.jpg 800w, images/opt/raze-solar-scaj0t40nfi-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 823px" width="1200" height="800" decoding="async" loading="lazy" alt="Roofer installing architectural shingles on a Virginia home" onerror="this.remove()"></picture><span class="cap">Roof replacement</span></a>
+      <a class="shot rv d1" href="work.html"><span class="ph"><b>Siding</b><span>Illustrative photo</span></span><picture><source type="image/webp" srcset="images/opt/marina-de-salis-obpqsov0yfa-unsplash-480.webp 480w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-800.webp 800w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px"><img src="images/opt/marina-de-salis-obpqsov0yfa-unsplash-1200.jpg" srcset="images/opt/marina-de-salis-obpqsov0yfa-unsplash-480.jpg 480w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-800.jpg 800w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px" width="1200" height="823" decoding="async" loading="lazy" alt="Gray vinyl siding and replacement window on a Virginia home" onerror="this.remove()"></picture><span class="cap">Vinyl siding</span></a>
+      <a class="shot rv d2" href="work.html"><span class="ph"><b>Roofing</b><span>Illustrative photo</span></span><picture><source type="image/webp" srcset="images/opt/paragon-exterior--uvuu43fawq-unsplash-480.webp 480w, images/opt/paragon-exterior--uvuu43fawq-unsplash-800.webp 800w, images/opt/paragon-exterior--uvuu43fawq-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px"><img src="images/opt/paragon-exterior--uvuu43fawq-unsplash-1200.jpg" srcset="images/opt/paragon-exterior--uvuu43fawq-unsplash-480.jpg 480w, images/opt/paragon-exterior--uvuu43fawq-unsplash-800.jpg 800w, images/opt/paragon-exterior--uvuu43fawq-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px" width="1200" height="900" decoding="async" loading="lazy" alt="Aerial drone view of completed asphalt shingle roof" onerror="this.remove()"></picture><span class="cap">Aerial</span></a>
+      <a class="shot rv d3" href="work.html"><span class="ph"><b>Gutters</b><span>Illustrative photo</span></span><picture><source type="image/webp" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.webp 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.webp 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px"><img src="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.jpg 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.jpg 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px" width="1200" height="1600" decoding="async" loading="lazy" alt="Seamless aluminum gutter and downspout on a home" onerror="this.remove()"></picture><span class="cap">Seamless gutters</span></a>
+      <a class="shot rv d4" href="work.html"><span class="ph"><b>Windows</b><span>Illustrative photo</span></span><picture><source type="image/webp" srcset="images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-480.webp 480w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-800.webp 800w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px"><img src="images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-1200.jpg" srcset="images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-480.jpg 480w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-800.jpg 800w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 43vw, (max-width: 1099px) 47vw, 405px" width="1200" height="1800" decoding="async" loading="lazy" alt="Large windows on a brick commercial building" onerror="this.remove()"></picture><span class="cap">Replacement windows</span></a>
     </div>
   </div>
 </section>

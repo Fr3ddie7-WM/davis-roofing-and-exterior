@@ -176,6 +176,10 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}footer a:hove
 .m-call{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:48px;padding:0 18px;border-radius:9999px;background:hsl(var(--sky));color:#fff;font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .m-call:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media(min-width:700px){.m-call{display:none}}
+
+/* keep aspect ratio when only width is set by CSS (Nov 2026) */
+:where(img[width][height]){height:auto}
+picture{display:contents}
 </style>
 <script type="application/ld+json">
 {
@@ -523,7 +527,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="media rv d1">
-        <img src="images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg" alt="Seamless aluminum gutter and downspout system" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.webp 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.webp 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.jpg 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.jpg 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="1600" decoding="async" loading="lazy" alt="Seamless aluminum gutter and downspout system"></picture>
         <div class="stat-card"><b>Free</b><span>With qualifying installs</span></div>
       </div>
     </div>
@@ -582,7 +586,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="media rv d1">
-        <img src="images/pexels-nathan-franklin-102496729-15662219.jpg" alt="Close-up of seamless aluminum gutter on a residential roofline" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/pexels-nathan-franklin-102496729-15662219-480.webp 480w, images/opt/pexels-nathan-franklin-102496729-15662219-800.webp 800w, images/opt/pexels-nathan-franklin-102496729-15662219-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/pexels-nathan-franklin-102496729-15662219-1200.jpg" srcset="images/opt/pexels-nathan-franklin-102496729-15662219-480.jpg 480w, images/opt/pexels-nathan-franklin-102496729-15662219-800.jpg 800w, images/opt/pexels-nathan-franklin-102496729-15662219-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="1800" decoding="async" loading="lazy" alt="Close-up of seamless aluminum gutter on a residential roofline"></picture>
       </div>
     </div>
   </div>

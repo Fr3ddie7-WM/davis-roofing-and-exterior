@@ -630,6 +630,10 @@ footer a:hover{color:hsl(var(--sky))}
 .m-call{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:48px;padding:0 18px;border-radius:9999px;background:hsl(var(--sky));color:#fff;font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .m-call:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media(min-width:700px){.m-call{display:none}}
+
+/* keep aspect ratio when only width is set by CSS (Nov 2026) */
+:where(img[width][height]){height:auto}
+picture{display:contents}
 </style>
 <script type="application/ld+json">
 {
@@ -876,7 +880,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="media rv d1">
-        <img src="images/jordan-davis.jpg" alt="Jordan Davis, Owner of Davis Roofing &amp; Exteriors" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;object-position:center 25%">
+        <picture><source type="image/webp" srcset="images/opt/jordan-davis-480.webp 480w, images/opt/jordan-davis-800.webp 800w, images/opt/jordan-davis-1125.webp 1125w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 527px"><img src="images/opt/jordan-davis-1125.jpg" srcset="images/opt/jordan-davis-480.jpg 480w, images/opt/jordan-davis-800.jpg 800w, images/opt/jordan-davis-1125.jpg 1125w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 527px" width="1125" height="2000" decoding="async" loading="lazy" alt="Jordan Davis, Owner of Davis Roofing &amp; Exteriors" style="aspect-ratio:4/3;object-fit:cover;object-position:center 25%"></picture>
         <div class="stat-card"><b>Jordan Davis</b><span>Owner &amp; Founder</span></div>
       </div>
     </div>

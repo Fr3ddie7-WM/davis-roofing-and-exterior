@@ -630,6 +630,10 @@ footer a:hover{color:hsl(var(--sky))}
 .m-call{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:48px;padding:0 18px;border-radius:9999px;background:hsl(var(--sky));color:#fff;font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .m-call:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media(min-width:700px){.m-call{display:none}}
+
+/* keep aspect ratio when only width is set by CSS (Nov 2026) */
+:where(img[width][height]){height:auto}
+picture{display:contents}
 </style>
 <script type="application/ld+json">
 {
@@ -879,7 +883,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="btn-row" style="margin-top:30px"><a class="btn" href="contact.html"><span>Get a Roof Quote</span></a><a class="btn ghost" href="service-roofing.html"><span>Full Roofing Details</span></a></div>
       </div>
       <div class="media rv d1">
-        <img src="images/raze-solar-Scaj0T40nFI-unsplash.jpg" alt="Roofer installing architectural shingles on a Virginia home" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/raze-solar-scaj0t40nfi-unsplash-480.webp 480w, images/opt/raze-solar-scaj0t40nfi-unsplash-800.webp 800w, images/opt/raze-solar-scaj0t40nfi-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/raze-solar-scaj0t40nfi-unsplash-1200.jpg" srcset="images/opt/raze-solar-scaj0t40nfi-unsplash-480.jpg 480w, images/opt/raze-solar-scaj0t40nfi-unsplash-800.jpg 800w, images/opt/raze-solar-scaj0t40nfi-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="800" decoding="async" loading="lazy" alt="Roofer installing architectural shingles on a Virginia home"></picture>
         <div class="stat-card"><b>1 Day</b><span>Typical install</span></div>
       </div>
     </div>
@@ -891,7 +895,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="split">
       <div class="media rv" style="order:2">
-        <img src="images/john-powell-cRCGMkVMV7U-unsplash.jpg" alt="Vinyl siding with shutters and window on a Virginia home" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/john-powell-crcgmkvmv7u-unsplash-480.webp 480w, images/opt/john-powell-crcgmkvmv7u-unsplash-800.webp 800w, images/opt/john-powell-crcgmkvmv7u-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 95vw, 584px"><img src="images/opt/john-powell-crcgmkvmv7u-unsplash-1200.jpg" srcset="images/opt/john-powell-crcgmkvmv7u-unsplash-480.jpg 480w, images/opt/john-powell-crcgmkvmv7u-unsplash-800.jpg 800w, images/opt/john-powell-crcgmkvmv7u-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 89vw, (max-width: 1099px) 95vw, 584px" width="1200" height="1600" decoding="async" loading="lazy" alt="Vinyl siding with shutters and window on a Virginia home"></picture>
       </div>
       <div class="rv d1">
         <span class="eyebrow">Service 02</span>
@@ -925,7 +929,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <div class="btn-row" style="margin-top:30px"><a class="btn" href="contact.html"><span>Get a Windows &amp; Doors Quote</span></a><a class="btn ghost" href="service-windows-and-doors.html"><span>Full Details</span></a></div>
       </div>
-      <div class="slot rv d1" style="padding:0;background:none;border:none;overflow:hidden"><img src="images/julia-rodriguez--s6f2bmXkjg-unsplash.jpg" alt="Large replacement windows on a brick home" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius)"></div>
+      <div class="slot rv d1" style="padding:0;background:none;border:none;overflow:hidden"><picture><source type="image/webp" srcset="images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-480.webp 480w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-800.webp 800w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-1200.jpg" srcset="images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-480.jpg 480w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-800.jpg 800w, images/opt/julia-rodriguez--s6f2bmxkjg-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="1800" decoding="async" loading="lazy" alt="Large replacement windows on a brick home" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius)"></picture></div>
     </div>
   </div>
 </section>
@@ -934,7 +938,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="pad dark grid-lines on-dark" id="gutters">
   <div class="wrap">
     <div class="split">
-      <div class="slot on-dark-slot rv" style="order:2;padding:0;background:none;border:none;overflow:hidden"><img src="images/zachary-keimig-gvt-wjGk4S4-unsplash.jpg" alt="Seamless aluminum gutter and downspout system" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius)"></div>
+      <div class="slot on-dark-slot rv" style="order:2;padding:0;background:none;border:none;overflow:hidden"><picture><source type="image/webp" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.webp 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.webp 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg" srcset="images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-480.jpg 480w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-800.jpg 800w, images/opt/zachary-keimig-gvt-wjgk4s4-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="1600" decoding="async" loading="lazy" alt="Seamless aluminum gutter and downspout system" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius)"></picture></div>
       <div class="rv d1">
         <span class="eyebrow">Service 04</span>
         <h2>Seamless Gutters</h2>

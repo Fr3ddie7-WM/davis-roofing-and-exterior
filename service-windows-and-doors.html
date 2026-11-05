@@ -176,6 +176,10 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}footer a:hove
 .m-call{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:48px;padding:0 18px;border-radius:9999px;background:hsl(var(--sky));color:#fff;font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .m-call:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media(min-width:700px){.m-call{display:none}}
+
+/* keep aspect ratio when only width is set by CSS (Nov 2026) */
+:where(img[width][height]){height:auto}
+picture{display:contents}
 </style>
 <script type="application/ld+json">
 {
@@ -523,7 +527,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="media rv d1">
-        <img src="images/johnson-U6Q6zVDgmSs-unsplash.jpg" alt="Replacement window installation on a Virginia home" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/johnson-u6q6zvdgmss-unsplash-480.webp 480w, images/opt/johnson-u6q6zvdgmss-unsplash-800.webp 800w, images/opt/johnson-u6q6zvdgmss-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/johnson-u6q6zvdgmss-unsplash-1200.jpg" srcset="images/opt/johnson-u6q6zvdgmss-unsplash-480.jpg 480w, images/opt/johnson-u6q6zvdgmss-unsplash-800.jpg 800w, images/opt/johnson-u6q6zvdgmss-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="900" decoding="async" loading="lazy" alt="Replacement window installation on a Virginia home"></picture>
         <div class="stat-card"><b>Day 1</b><span>Trim finished same day</span></div>
       </div>
     </div>
@@ -582,7 +586,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="media rv d1">
-        <img src="images/marina-de-salis-OBPQSov0yfA-unsplash.jpg" alt="Gray vinyl siding and replacement window on a Virginia home" loading="lazy">
+        <picture><source type="image/webp" srcset="images/opt/marina-de-salis-obpqsov0yfa-unsplash-480.webp 480w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-800.webp 800w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-1200.webp 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px"><img src="images/opt/marina-de-salis-obpqsov0yfa-unsplash-1200.jpg" srcset="images/opt/marina-de-salis-obpqsov0yfa-unsplash-480.jpg 480w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-800.jpg 800w, images/opt/marina-de-salis-obpqsov0yfa-unsplash-1200.jpg 1200w" sizes="(max-width: 699px) 90vw, (max-width: 1099px) 95vw, 586px" width="1200" height="823" decoding="async" loading="lazy" alt="Gray vinyl siding and replacement window on a Virginia home"></picture>
       </div>
     </div>
   </div>
