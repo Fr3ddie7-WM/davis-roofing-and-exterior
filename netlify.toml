@@ -1,0 +1,183 @@
+# Davis Roofing & Exteriors: Netlify config (Nov 2026 SEO update)
+# Preferred URLs: "/" for home and "/page.html" for every other page, matching the
+# canonicals and sitemap Google already has. Netlify keeps query strings on redirects,
+# so ad and campaign parameters survive. force = true is needed because Netlify would
+# otherwise serve the matching file with a 200 instead of redirecting.
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about/"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/"
+  to = "/services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-roofing"
+  to = "/service-roofing.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-roofing/"
+  to = "/service-roofing.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-siding"
+  to = "/service-siding.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-siding/"
+  to = "/service-siding.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-windows-and-doors"
+  to = "/service-windows-and-doors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-windows-and-doors/"
+  to = "/service-windows-and-doors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-gutters"
+  to = "/service-gutters.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-gutters/"
+  to = "/service-gutters.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work"
+  to = "/work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/"
+  to = "/work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas"
+  to = "/service-areas.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/"
+  to = "/service-areas.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy-policy.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms-of-service"
+  to = "/terms-of-service.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms-of-service/"
+  to = "/terms-of-service.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thank-you/"
+  to = "/thank-you.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thank-you-booking"
+  to = "/thank-you-booking.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thank-you-booking/"
+  to = "/thank-you-booking.html"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/thank-you*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/images/opt/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

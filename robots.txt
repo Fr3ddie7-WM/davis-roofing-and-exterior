@@ -1,0 +1,5 @@
+# Davis Roofing & Exteriors
+User-agent: *
+Allow: /
+
+Sitemap: https://davisroofingandexteriors.com/sitemap.xml
