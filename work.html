@@ -8,8 +8,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-54BVPL85');</script>
 <!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MV633Q4Q3W"></script>
+<!-- Google Analytics (G-MV633Q4Q3W) loads through Google Tag Manager above; gtag() below queues commands for it -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -627,6 +626,9 @@ footer a:hover{color:hsl(var(--sky))}
 /* keep aspect ratio when only width is set by CSS (Nov 2026) */
 :where(img[width][height]){height:auto}
 picture{display:contents}
+
+/* Mobile: enlarge tap area of small text links without changing their look */
+@media (pointer:coarse){.txtlink,.topbar a{position:relative}.txtlink::after,.topbar a::after{content:"";position:absolute;inset:-12px -8px}}
 </style>
 <script type="application/ld+json">
 {
@@ -795,7 +797,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="nav" id="nav">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Davis Roofing &amp; Exteriors — home">
-      <img src="images/logo-transparent.png" alt="Davis Roofing &amp; Exteriors" class="nav-logo" width="180" height="56" style="height:44px;width:auto;display:block">
+      <img src="images/logo-nav.png" alt="Davis Roofing &amp; Exteriors" class="nav-logo" width="305" height="150" style="height:44px;width:auto;display:block">
     </a>
 
     <nav class="nav-links" aria-label="Primary">
@@ -919,7 +921,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="f-grid">
       <div class="f-brand">
-        <img src="images/logo-transparent.png" alt="Davis Roofing &amp; Exteriors" width="200" height="62" style="height:48px;width:auto;display:block;margin-bottom:4px">
+        <img src="images/logo-nav.png" alt="Davis Roofing &amp; Exteriors" width="305" height="150" style="height:48px;width:auto;display:block;margin-bottom:4px">
         <p style="max-width:34ch">Licensed roofing, siding, window and gutter specialists serving the Shenandoah Valley plus Richmond, Midlothian and the surrounding metro.</p>
         <p style="font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:hsl(var(--amber))">Free estimates available</p>
       </div>
@@ -1135,7 +1137,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.querySelectorAll('a[href^="tel:"], a[href^="sms:"]').forEach(function (a) {
     a.addEventListener('click', function () {
       if (typeof gtag === 'function') {
-        gtag('event', 'phone_click', { link_url: this.href });
+        gtag('event', 'phone_click', { link_url: this.href, send_to: 'G-MV633Q4Q3W' });
       }
     });
   });
