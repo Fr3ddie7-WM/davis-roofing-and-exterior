@@ -15,6 +15,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
   gtag('config', 'G-MV633Q4Q3W');
 </script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1127334123443625');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1127334123443625&amp;ev=PageView&amp;noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | Davis Roofing & Exteriors</title>
@@ -132,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <a class="home-link" href="/">&larr; Davis Roofing & Exteriors</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: September 7, 2026</p>
+    <p class="updated">Last updated: November 12, 2026</p>
   </div>
 </header>
 
@@ -175,6 +188,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h3>Message Frequency &amp; Rates</h3>
   <p>Message frequency varies based on your inquiry and service schedule. Message and data rates may apply. Carriers are not liable for delayed or undelivered messages. For questions about your text or data plan, contact your wireless provider.</p>
 
+  <h2>Cookies, Analytics &amp; Advertising</h2>
+  <p>Our website uses cookies and similar technologies from Google (Google Analytics and Google Tag Manager) and Meta (the Meta Pixel) to understand how visitors use the site and to measure and improve our advertising on Facebook and Instagram. These tools may collect information such as the pages you visit, the device and browser you use, your approximate location, and actions you take on the site, such as booking an estimate or tapping our phone number. Meta and Google may use this information to show you relevant ads and to measure how our ads perform.</p>
+  <p>You can block or delete cookies in your browser settings, opt out of Google Analytics with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out browser add-on</a>, and manage how Meta uses your activity for ads in your <a href="https://www.facebook.com/adpreferences/ad_settings" target="_blank" rel="noopener">Facebook ad preferences</a>. You can also opt out of interest-based advertising from participating companies at <a href="https://optout.aboutads.info/" target="_blank" rel="noopener">optout.aboutads.info</a>.</p>
+
   <h2>Third-Party Sharing</h2>
   <p>We do not sell, rent, or share your personal information, including your mobile phone number, with third parties for their own marketing purposes. We may share information with service providers who help us operate our business (such as our customer relationship management and messaging platform) solely to deliver the services described in this policy.</p>
 
@@ -215,6 +232,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     a.addEventListener('click', function () {
       if (typeof gtag === 'function') {
         gtag('event', 'phone_click', { link_url: this.href, send_to: 'G-MV633Q4Q3W' });
+      }
+      if (window.fbq) {
+        fbq('track', 'Contact', { method: this.href.indexOf('sms:') === 0 ? 'sms' : 'phone' });
       }
     });
   });
