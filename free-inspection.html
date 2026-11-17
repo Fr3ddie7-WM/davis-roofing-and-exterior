@@ -665,6 +665,7 @@ picture{display:contents}
 .lp-light .lp-card{background:#fff;border:1px solid hsl(var(--border));box-shadow:var(--shadow)}
 .lp-light .lp-card .field input,.lp-light .lp-card .field select{background-color:#fff;border-color:hsl(var(--border));color:hsl(var(--foreground))}
 .lp-light .lp-card .field option{background:#fff;color:hsl(var(--foreground))}
+.lp-ghl{padding:0;overflow:hidden}
 .lp-light .lp-card .field input::placeholder{color:hsl(var(--muted-foreground))}
 .lp-light .field .err{color:#C2412D}
 .lp-light .field.invalid input,.lp-light .field.invalid select{border-color:#E0604C}
@@ -852,42 +853,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- RIGHT: form -->
       <div class="rv d1 lp-form-wrap">
-        <form id="lead-form" class="lp-card" name="fb-lead" method="POST" action="/thank-you-inspection.html" data-netlify="true" netlify-honeypot="bot-field" novalidate>
-          <input type="hidden" name="form-name" value="fb-lead">
-          <input type="hidden" name="utm_source" id="f-utm_source">
-          <input type="hidden" name="utm_campaign" id="f-utm_campaign">
-          <input type="hidden" name="utm_content" id="f-utm_content">
-          <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-          <h2 style="font-size:clamp(1.35rem,2.2vw,1.7rem);margin:0 0 6px">Claim your free inspection</h2>
-          <p class="form-note" style="margin:0 0 22px">Takes about 20 seconds. We'll reach out to schedule.</p>
-          <div class="two">
-            <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"><span class="err">Please enter your name</span></div>
-            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(540) 555-0123"><span class="err">Please enter a valid phone number</span></div>
-          </div>
-          <div class="field"><label for="f-email">Email <span style="opacity:.6">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"><span class="err">Please check your email</span></div>
-          <div class="two">
-            <div class="field"><label for="f-address">Street address</label><input id="f-address" name="address" type="text" autocomplete="street-address" required placeholder="123 Main St"><span class="err">Please enter your address</span></div>
-            <div class="field"><label for="f-zip">ZIP</label><input id="f-zip" name="zip" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="5" required placeholder="24401"><span class="err">Please enter a 5-digit ZIP</span></div>
-          </div>
-          <div class="field"><label for="f-service">What do you need?</label>
-            <select id="f-service" name="service" required>
-              <option value="" selected disabled>Choose one</option>
-              <option>Roof replacement</option>
-              <option>Roof repair / leak</option>
-              <option>Gutters</option>
-              <option>Siding</option>
-              <option>Windows &amp; doors</option>
-              <option>Not sure — just want an inspection</option>
-            </select><span class="err">Please choose an option</span></div>
-          <div class="field"><label for="f-offer">Your offer</label>
-            <select id="f-offer" name="offer">
-              <option>$1,000 off a new roof</option>
-              <option>Free gutters</option>
-              <option>Not sure yet</option>
-            </select></div>
-          <button class="btn btn-sky" type="submit" style="width:100%;justify-content:center"><span>Get My Free Inspection</span></button>
-          <p class="form-note" style="font-size:.78rem">By submitting, you agree Davis Roofing &amp; Exteriors may call or text you about your request. No spam. See our <a href="privacy-policy.html" style="text-decoration:underline">privacy policy</a>.</p>
-        </form>
+        <div id="lead-form" class="lp-card lp-ghl">
+          <!-- GHL form: "Meta Inspection Landing Page Form". Set its on-submit redirect to /thank-you-inspection -->
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/dBMY0NEKkMThWfNZJOoA"
+            style="width:100%;height:1494px;border:none;border-radius:8px"
+            id="inline-dBMY0NEKkMThWfNZJOoA"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Meta Inspection Landing Page Form"
+            data-height="1494"
+            data-layout-iframe-id="inline-dBMY0NEKkMThWfNZJOoA"
+            data-form-id="dBMY0NEKkMThWfNZJOoA"
+            data-cookie-consent="true"
+            data-cookie-consent-provider="auto"
+            title="Meta Inspection Landing Page Form"></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -1137,39 +1123,25 @@ window.addEventListener('message', function (e) {
       window.location.href = '/thank-you-booking';
       return;
     }
-    /* Form submission (backup, if a form embed is added later) */
+    /* GHL form submitted (backup in case the form's own redirect doesn't fire) */
     if (
       d.type === 'form_submitted' ||
       d.type === 'FORM_SUBMITTED' ||
       d.event === 'form_submitted' ||
       d.event === 'formSubmitted'
     ) {
-      window.location.href = '/thank-you';
+      window.location.href = '/thank-you-inspection';
     }
   } catch (err) {}
 });
 </script>
 <script>
-/* FB landing page: capture UTMs + validate */
+/* Pass ad UTMs (utm_source/campaign/content, fbclid) through to the GHL form's hidden fields */
 (function(){
-  var q=new URLSearchParams(location.search);
-  ['utm_source','utm_campaign','utm_content'].forEach(function(k){var el=document.getElementById('f-'+k); if(el) el.value=q.get(k)||'';});
-  var f=document.getElementById('lead-form'); if(!f) return;
-  f.addEventListener('submit',function(e){
-    var ok=true;
-    f.querySelectorAll('.field').forEach(function(w){
-      var i=w.querySelector('input,select'); if(!i) return;
-      var v=(i.value||'').trim(), bad=false;
-      if(i.required && !v) bad=true;
-      if(i.name==='phone' && v.replace(/\D/g,'').length<10) bad=true;
-      if(i.name==='zip' && v && !/^\d{5}$/.test(v)) bad=true;
-      if(i.name==='email' && v && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) bad=true;
-      w.classList.toggle('invalid',bad); if(bad) ok=false;
-    });
-    if(!ok){ e.preventDefault(); var first=f.querySelector('.invalid input,.invalid select'); if(first) first.focus(); return; }
-    var b=f.querySelector('button[type=submit]'); if(b){ b.setAttribute('disabled',''); b.querySelector('span').textContent='Sending…'; }
-  });
+  var f=document.getElementById('inline-dBMY0NEKkMThWfNZJOoA');
+  if(f && location.search){ f.src += (f.src.indexOf('?')<0?'?':'&') + location.search.slice(1); }
 })();
 </script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 </body>
 </html>
