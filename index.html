@@ -356,6 +356,12 @@ body.menu-open .drawer{transform:translateY(0); visibility:visible}
   .hero-badges>div:nth-child(3){border-top:1px solid rgba(255,255,255,.1)}
   .hero-badges>div:nth-child(4){border-top:1px solid rgba(255,255,255,.1)}
 }
+/* phones & tablets: stack the badges below the hero copy instead of overlaying the buttons */
+@media(max-width:899px){
+  .hero{flex-direction:column; justify-content:flex-end; align-items:stretch}
+  .hero-inner{padding-bottom:40px}
+  .hero-badges{position:relative}
+}
 
 .scroll-cue{
   position:absolute; right:24px; bottom:26px; z-index:3; writing-mode:vertical-rl;
